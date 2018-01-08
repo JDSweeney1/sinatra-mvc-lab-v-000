@@ -10,7 +10,7 @@ class PigLatinizer
     elsif vowels.include?(word[0])
       @pig = "#{word = "way"}"
     else
-      index = word.split("").find_index{|l| vowels.include?(l)}.to_i #index of first vowel
+      index = word_array.find_index{|l| vowels.include?(l)}.to_i #index of first vowel
       @pig = "#{word.split("").find_index{|l| vowels.include?(l)}}"
       # @pig = "#{word.split("").drop(1).join + word[0] + "ay"}"
     end

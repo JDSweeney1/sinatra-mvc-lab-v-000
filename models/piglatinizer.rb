@@ -9,7 +9,7 @@ class PigLatinizer
     elsif vowels.include?(word[0])
       @pig = "#{word = "way"}"
     else
-      @pig = "#{word.find_index{|l| vowel.include?(l)}}"
+      @pig = "#{word.split("").find_index{|l| vowel.include?(l)}}"
       # @pig = "#{word.split("").drop(1).join + word[0] + "ay"}"
     end
   end

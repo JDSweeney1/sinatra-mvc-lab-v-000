@@ -11,7 +11,7 @@ class PigLatinizer
       @pig = "#{word + "way"}"
     else
       index = word_array.find_index{|l| vowels.include?(l)}.to_i #index of first vowel
-      \"#{word_array.drop(index).join + word[0..index - 1] + "ay"}"
+      "#{word_array.drop(index).join + word[0..index - 1] + "ay"}"
     end
   end
 

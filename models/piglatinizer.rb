@@ -7,9 +7,10 @@ class PigLatinizer
 
     if word.split("").count == 1
       @pig = "#{word + "way"}"
-    else 
+    else
       @pig = "#{word.split("").drop(1).join + word[0] + "ay"}"
     end
+  end
 
 
   def to_pig_latin(string)

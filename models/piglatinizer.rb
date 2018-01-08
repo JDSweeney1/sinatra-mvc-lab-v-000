@@ -6,9 +6,9 @@ class PigLatinizer
     word_array = word.split("")
 
     if word_array.count == 1
-      @pig = "#{word + "way"}"
+      "#{word + "way"}"
     elsif vowels.include?(word[0].downcase)
-      @pig = "#{word + "way"}"
+      "#{word + "way"}"
     else
       index = word_array.find_index{|l| vowels.include?(l)}.to_i #index of first vowel
       "#{word_array.drop(index).join + word[0..index - 1] + "ay"}"
